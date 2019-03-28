@@ -49,7 +49,7 @@
 6.	The QBSK Demodulator Baseband block Baseband block, to the right of the AGWN channel demodulates the signal.
 7.	The Error Rate Calculation block counts symbols that differ between the received signal and the transmitted signal.
 ## The Modulation Schema
-![QPSK](/QPSK/QPSK.png)
+![QPSK](/QPSK/qbsk.png)
 8.	The To Workspace block, labeled Ber outputs the results to the workspace to use when plotting results.
 ## Instruction SET:
 * Random Integer Generator set size = 4
