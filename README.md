@@ -12,6 +12,7 @@
 * Symbol period = 1s
 * Simulation time = 1000s
 #### 3.BER diagrams are set from -10 to 10 dB
+#### 4. In QAM16 and QAM64 number of bits per symbol = 16,64 respectively
 ------------------------------------------------------------------
 # Binary Phase Shift Keying Modulation
 #### This model simulates binary phase shift keying modulation (BPSK), which is a method for converting a digital signal to a complex signal. In this technique, the sine wave carrier takes two phase reversals such as 0° and 180°. BPSK is basically a Double Side Band Suppressed Carrier (DSBSC) modulation scheme, for message being the digital information.
