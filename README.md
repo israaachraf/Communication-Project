@@ -49,7 +49,7 @@
 6.	The QBSK Demodulator Baseband block Baseband block, to the right of the AGWN channel demodulates the signal.
 7.	The Error Rate Calculation block counts symbols that differ between the received signal and the transmitted signal.
 ## The Modulation Schema
-![QPSK](/QPSK/qpsk.png)
+![QPSK](/QPSK/QPSK.png)
 8.	The To Workspace block, labeled Ber outputs the results to the workspace to use when plotting results.
 ## Instruction SET:
 * Random Integer Generator set size = 4
@@ -154,6 +154,7 @@ Normalization method = Average power
 ![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_bpsk_raised_cosine.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_bpsk_raised_cosine.png)
 ## BER performance figure for Binary Phase Shift Keying Modulation:
+![After](/raised_cosine_fig/Error_Curve_bpsk_raised_cosine.png)
 --------------------------------------------------------------
 ## QPSK
 ## The Modulation Schema:
@@ -166,6 +167,7 @@ Normalization method = Average power
 ![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qpsk_raised_cosine.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qpsk_raised_cos.png)
 ## BER performance figure Set for Quadrature Shift Keying Modulation:
+![After](/raised_cosine_fig/Error_Curve_qpsk_raised_cosine.png)
 -----------------------------------------------------------
 ## FSK
 ## The Modulation Schema:
@@ -178,7 +180,7 @@ Normalization method = Average power
 ![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_fsk_raised_cos.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qpsk_raised_cos.png)
 ## BER performance figure for Frequency Shift Keying Modulation:
-
+![After](/raised_cosine_fig/Error_Curve_fsk_raised_cosine.png)
 ---------------------------------------------------------------
 # 16-QAM
 ## The Modulation Schema
@@ -193,6 +195,7 @@ Normalization method = Average power
 ![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qam16_raised_cosine.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qam16_raised_cos.png)
 ## BER performance figure  for 16-Quadrature Amplitude Modulation:
+![After](/raised_cosine_fig/Error_Curve_qam16_raised_cosine.png)
 ---------------------------------------------------------------
 ## 64-QAM
 ## The Modulation Schema:
@@ -209,4 +212,5 @@ Normalization method = Average power
 ![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qam64_raised_cos.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qam64_raised_cos.png)
 ## BER performance figure  for 64-Quadrature Amplitude Modulation:
+![After](/raised_cosine_fig/Error_Curve_qam64_raised_cosine.png)
 
