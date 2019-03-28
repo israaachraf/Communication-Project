@@ -49,7 +49,7 @@
 6.	The QBSK Demodulator Baseband block Baseband block, to the right of the AGWN channel demodulates the signal.
 7.	The Error Rate Calculation block counts symbols that differ between the received signal and the transmitted signal.
 ## The Modulation Schema
-![QPSK](/QPSK/QPSK.png)
+![QPSK](/QPSK/qpsk.png)
 8.	The To Workspace block, labeled Ber outputs the results to the workspace to use when plotting results.
 ## Instruction SET:
 * Random Integer Generator set size = 4
@@ -209,7 +209,7 @@ Normalization method = Average power
 
 
 ## Scatter Plot  for 64-Quadrature Amplitude Modulation:
-![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qam64_raised_cos.png)
+![Before](/raised_cosine_fig/Scatter_Plot_before_Noise_qam64_raised_cos.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qam64_raised_cos.png)
 ## BER performance figure  for 64-Quadrature Amplitude Modulation:
 ![After](/raised_cosine_fig/Error_Curve_qam64_raised_cosine.png)
