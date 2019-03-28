@@ -177,7 +177,7 @@ Normalization method = Average power
 * Error Rate calculation : Recieve Delay = 8
 
 ## Scatter Plot for Frequency Shift Keying Modulation:
-![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_fsk_raised_cos.png)
+![Before](/raised_cosine_fig/Scatter_Plot_before_Noise_qam64_raised_cos.png)
 ![After](/raised_cosine_fig/Scatter_Plot_After_Noise_fsk_raised_cos.png)
 ## BER performance figure for Frequency Shift Keying Modulation:
 ![After](/raised_cosine_fig/Error_Curve_fsk_raised_cosine.png)
