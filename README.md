@@ -30,7 +30,6 @@
 * Random Generator set size = 2
 ## Scatter Plot:
 ![BPSK Before Noise](/BPSK/Scatter_Plot_Before_Noise.png)
-
 ![BPSK After Noise](/BPSK/Scatter_Plot_After_Noise.png)
 
 ## BER performance figure:
@@ -56,7 +55,6 @@
 * Random Integer Generator set size = 4
 ## Scatter Plot:
 ![QPSK Before Noise](/QPSK/Scatter_Plot_Before_Noise_qpsk.png)
-
 ![QPSK After Noise](/QPSK/Scatter_Plot_After_Noise_qpsk.png)
 
 ## BER performance figure:
@@ -79,7 +77,6 @@
 * Random Integer Generator set size = 8
 ## Scatter Plot:
 ![FSK Before Noise](/FSK/Scatter_Plot_Before_Noise_fsk.png)
-
 ![FSK After Noise](/FSK/Scatter_Plot_After_Noise_fsk.png)
 
 ## BER performance figure:
@@ -106,7 +103,6 @@
 * Modulator and demodulation: Normalization method = Average power
 ## Scatter Plot:
 ![QAM16 Before Noise](/QAM16/Scatter_Plot_Before_Noise_qam16.png)
-
 ![QAM16 After Noise](/QAM16/Scatter_Plot_After_Noise_qam16.png)
 
 ## BER performance figure:
@@ -134,7 +130,6 @@
 Normalization method = Average power
 ## Scatter Plot:
 ![QAM64 Before Noise](/QAM64/Scatter_Plot_Before_Noise_qam64.png)
-
 ![QAM64 After Noise](/QAM64/Scatter_Plot_After_Noise_qam64.png)
 
 ## BER performance figure:
@@ -147,64 +142,71 @@ Normalization method = Average power
 #### The Raised Cosine Transmit Filter and Raised Cosine Receive Filter blocks are tailored for use at the transmitter and receiver, respectively. The transmit filter outputs an upsampled (interpolated) signal, while the receive filter expects its input signal to be upsampled. The receive filter lets you choose whether to have the block downsample (decimate) the filtered signal before sending it to the output port.
 #### Both raised cosine filter blocks introduce a propagation delay.
 --------------------------------------------------------------
+# BPSK
 ## The Modulation Schema:
-
+![BPSK](/raisedcos_code_screen/bpsk_cosine.png)
 ## The Change in the instruction Set for Binary Phase Shift Keying Modulation :
-*
-*
-*
-*
-*
+* Raised Cosine Filter Transmitter : Filter span in symbols = 8
+* Raised Cosine Filter Reciever : Filter span in symbols = 8
+* Error Rate calculation : Recieve Delay = 8
 
 ## Scatter Plot for Binary Phase Shift Keying Modulation:
-
+![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_bpsk_raised_cosine.png)
+![After](/raised_cosine_fig/Scatter_Plot_After_Noise_bpsk_raised_cosine.png)
 ## BER performance figure for Binary Phase Shift Keying Modulation:
 --------------------------------------------------------------
+## QPSK
 ## The Modulation Schema:
-
+![BPSK](/raisedcos_code_screen/qpsk_cosine.png)
 ## The Change in the instruction Set for Quadrature Shift Keying Modulation :
-*
-*
-*
-*
-*
+* Raised Cosine Filter Transmitter : Filter span in symbols = 8
+* Raised Cosine Filter Reciever : Filter span in symbols = 8
+* Error Rate calculation : Recieve Delay = 8
 ## Scatter Plot Set for Quadrature Shift Keying Modulation:
+![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qpsk_raised_cosine.png)
+![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qpsk_raised_cos.png)
 ## BER performance figure Set for Quadrature Shift Keying Modulation:
 -----------------------------------------------------------
+## FSK
 ## The Modulation Schema:
+![BPSK](/raisedcos_code_screen/fsk_cosine.png)
+* Raised Cosine Filter Transmitter : Filter span in symbols = 8
+* Raised Cosine Filter Reciever : Filter span in symbols = 8
+* Error Rate calculation : Recieve Delay = 8
 
-## The Change in the instruction Set for Frequency Shift Keying Modulation :
-*
-*
-*
-*
-*
 ## Scatter Plot for Frequency Shift Keying Modulation:
+![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_fsk_raised_cos.png)
+![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qpsk_raised_cos.png)
 ## BER performance figure for Frequency Shift Keying Modulation:
 
 ---------------------------------------------------------------
+# 16-QAM
+## The Modulation Schema
+![BPSK](/raisedcos_code_screen/qam16_cosine.png)
 ## The Change in the instruction Set for 16-Quadrature Amplitude Modulation :
-*
-*
-*
-*
+* Raised Cosine Filter Transmitter : Filter span in symbols = 8
+* Raised Cosine Filter Reciever : Filter span in symbols = 8
+* Error Rate calculation : Recieve Delay = 8
 
 
 ## Scatter Plot  for 16-Quadrature Amplitude Modulation:
-
+![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qam16_raised_cosine.png)
+![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qam16_raised_cos.png)
 ## BER performance figure  for 16-Quadrature Amplitude Modulation:
 ---------------------------------------------------------------
+## 64-QAM
 ## The Modulation Schema:
-
+![BPSK](/raisedcos_code_screen/qam64_cosine.png)
 ## The Change in the instruction Set for 64-Quadrature Amplitude Modulation :
-*
-*
-*
-*
-* 
+* Raised Cosine Filter Transmitter : Filter span in symbols = 8
+* Raised Cosine Filter Reciever : Filter span in symbols = 8
+* Error Rate calculation : Recieve Delay = 8
+* QAM64 Modulator : Constellation ordering = Binary
+* QAM64 Demodulator : Constellation ordering = Binary
+
 
 ## Scatter Plot  for 64-Quadrature Amplitude Modulation:
+![Before](/raised_cosine_fig/Scatter_Plot_Before_Noise_qam64_raised_cos.png)
+![After](/raised_cosine_fig/Scatter_Plot_After_Noise_qam64_raised_cos.png)
 ## BER performance figure  for 64-Quadrature Amplitude Modulation:
 
------------------------------------------------------------------
-#Note: Schemas' Figures are not shown in the READ.ME you can see them in the Files :D 
